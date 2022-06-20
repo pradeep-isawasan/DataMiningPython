@@ -4,10 +4,11 @@ theme: gaia
 author: pradeep 
 size: 16:9
 paginate: true
-title: Data Science with Python
+footer: HiTEL Talk - Basic Data Mining with Python
 ---
 
 # Introduction
+
 
 ---
 
