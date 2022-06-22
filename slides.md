@@ -63,7 +63,9 @@ import pandas as pd
 
 ---
 # Iris Dataset
+Fisher's Iris data set introduced by Ronald Fisher in his 1936 paper. 
 
+![bg right:62% 90%](iris.png)
 
 ---
 # Reading Data
@@ -72,7 +74,7 @@ Usually we can use pandas library. Pandas store the imported data as DataFrame.
 
 ```py
 # Default sep = ','
-df = pd.read_csv("file_name.csv")
+df = pd.read_csv("iris_dirty.csv")
 ```
 or if you want to use another separator, simply add sep='\t'
 
@@ -157,7 +159,7 @@ df.dropna()
 df.fillna(0) 
 
 # fill NaN with mean, better
-df.fillna(df.mean(numeric_only=True)) 
+df1 = df.fillna(df.mean(numeric_only=True)) 
 ```
 
 ---
@@ -168,12 +170,12 @@ df.fillna(df.mean(numeric_only=True))
 Typo can be considered problematic.
 
 ```py
-# View problematic values
-df.iloc[[7]]
-
 # Count unique categorical values
-df.Species.unique()
-df['Species'].value_counts()
+df1.Species.unique()
+df1['Species'].value_counts()
+
+# View problematic values
+df1.iloc[[7]]
 ```
 
 ---
@@ -184,20 +186,57 @@ df['Species'].value_counts()
 We can replace with the correct value using replace()
 
 ```py
-df.replace(['SETSA'],'setosa')
+df2 = df1.replace(['SETSA'],'setosa')
 ```
 
 Cleaning done! 
 
-I have provided more detailed data cleaning in this [Kaggle post](https://www.kaggle.com/code/pradeepisawasan/handling-unusual-values).
+Check out my [Kaggle post](https://www.kaggle.com/code/pradeepisawasan/handling-unusual-values) for more data cleaning example.
 
 ---
+
 # Data Visualization
 
-We can replace with the correct value using replace()
+Why?
+- Visualizing data prior to analysis is a good practice. 
+- Statistical description do not fully depict the data set in its entirety.
+
+Check out my video *[HERE](https://youtu.be/Ftf3jDcMlGw) explaining the importance of visualizing data when analyzing it.
+
+*promo syok sendiri
+
+---
+
+# Cheat Sheet
+
+![bg right:75% 90%](chart.jpg)
+
+---
+
+# Data Visualization
+
+Scatter plot
 
 ```py
-df.replace(['SETSA'],'setosa')
+df2.plot.scatter(x = 'Petal.Length', y = 'Petal.Width')
+```
+Using colour as third variable
+
+```py
+# Dictionary mapping colour with categorical values
+colors = {'setosa':'red','virginica':'blue','versicolor':'green'}
+
+df2.plot.scatter(x = 'Petal.Length', y = 'Petal.Width', c = df2['Species'].map(colors))
 ```
 
-You can read more about data cleaning in this [Kaggle post](https://www.kaggle.com/code/pradeepisawasan/handling-unusual-values)
+---
+
+# Machine Learning
+
+scikit-learn
+
+```py
+df2.plot.scatter(x = 'Petal.Length', y = 'Petal.Width')
+```
+
+
