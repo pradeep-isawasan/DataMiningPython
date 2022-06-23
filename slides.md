@@ -62,12 +62,6 @@ import pandas as pd
 ```
 
 ---
-# Iris Dataset
-Fisher's Iris data set introduced by Ronald Fisher in his 1936 paper. 
-
-![bg right:62% 90%](iris.png)
-
----
 # Reading Data
 
 Usually we can use pandas library. Pandas store the imported data as DataFrame.
@@ -81,6 +75,12 @@ or if you want to use another separator, simply add sep='\t'
 ```py
 df = pd.read_csv("file_name.csv", sep = '\t')
 ```
+
+---
+# Iris Dataset
+Fisher's Iris data set introduced by Ronald Fisher in his 1936 paper. 
+
+![bg right:62% 90%](iris.png)
 
 ---
 
