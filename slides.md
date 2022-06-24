@@ -9,11 +9,11 @@ title: "Slides"
 <!-- _class: lead -->
 
 # Basic Data Mining with Python
-![w:70 h:60](Mypic.png)pradeep
+pradeep
 
 ---
 <!-- paginate: true -->
-<!-- footer: ![w:90 h:30](uitm-hitel.png) HITeL Innovative T&L Webinar Series 2022 -->
+<!-- footer: ![w:130 h:40](uitm-hitel.png) HITeL Innovative T&L Webinar Series 2022 -->
 
 # What is Data Mining?
 #### Many Definitions
@@ -21,8 +21,29 @@ title: "Slides"
 - Non-trivial extraction of implicit, previously unknown and potentially useful information from data
 - Exploration & analysis, by automatic or semi-automatic means, of large quantities of data in order to discover meaningful patterns 
 
- 
-> Data Mining is a process of extracting insights from data.
+_Data Mining is a process of extracting insights from data._
+
+---
+# What is Data?
+
+- Collection of data objects and attributes
+
+- An attribute is a property or characteristics of an object
+
+- A collection of attributes describe an object
+
+![bg right:47% 80%](data.png)
+
+---
+# The Data Mining Process
+For today's talk, we make it simple by seperating the process into
+
+**Part 1: Data Preprocessing**
+- Cleaning, transforming, visualizing
+
+**Part 2: Machine Learning**
+- Create model, train, test, evaluate, use
+
 
 ---
 # Technology/Tools
@@ -36,31 +57,10 @@ _Weka, RapidMiner, Excel_
 _R Studio Cloud, Power BI, Tableau, Google Collab_
 
 ---
-# What problem to solve?
-Classification - Supervised Learning
 
-Clustering - Unsupervised
+# Programming Language
+#### What is Python?
 
----
-# Methodology
-Apa tu
-
-
----
-# What is Data?
-
-- Collection of data objects and attributes
-
-- An attribute is a property or characteristics of an object
-
-- A collection of attributes describe an object
-
-![bg right:47% 80%](data.png)
-
-
----
-# Python
-What
 - High-Level Programming Language.
 - Emphasizes on code readibilty.
 - Rank = 1* for 2021 *[(IEEE Spectrum)](https://spectrum.ieee.org/top-programming-languages/)
@@ -74,12 +74,14 @@ What
 
 ---
 
-# Python Libraries
-A Python library is a collection of related modules. It makes Python Programming simpler and convenient for the programmer. 
+# Python Library
+#### Pandas for Data Analysis and Manipulation
+A Python library is a collection of related modules. It makes Python programming simpler and convenient for the programmer. 
 ```py
-# Pandas
+# importing Pandas library
 import pandas as pd
 ```
+Pandas is the backbone of most python data mining projects.
 
 ---
 # Reading Data
@@ -101,7 +103,7 @@ df = pd.read_csv("file_name.csv", sep = '\t')
 - Also known as Fisher's Iris dataset 
 - Introduced by Ronald Fisher in his 1936 paper. 
 
-![bg right:62% 90%](iris.png)
+![bg right:60% 90%](iris.png)
 
 ---
 
@@ -125,7 +127,7 @@ df.tail()
 
 # Data Info
 
-The shape property returns a tuple representing the dimensionality of the DataFrame. 
+The shape property returns the dimensionality of the DataFrame. 
 
 ```py
 df.shape
@@ -222,9 +224,7 @@ Why?
 - Visualizing data prior to analysis is a good practice. 
 - Statistical description do not fully depict the data set in its entirety.
 
-Check out my video *[HERE](https://youtu.be/Ftf3jDcMlGw) explaining the importance of visualizing data when analyzing it.
-
-*promo syok sendiri
+Check out my video [HERE](https://youtu.be/Ftf3jDcMlGw) explaining the importance of visualizing data when analyzing it.
 
 ---
 
@@ -253,7 +253,7 @@ df2.plot.scatter(x = 'Petal.Length', y = 'Petal.Width', c = df2['Species'].map(c
 ---
 
 # Data Visualization
-##### Colour
+##### What do you see?
 
 ![w:540 h:380](nocolor.png) ![w:540 h:380](color.png)
 
@@ -267,12 +267,24 @@ df2.plot.scatter(x = 'Petal.Length', y = 'Petal.Width', c = df2['Species'].map(c
 
 # Performing Classification
 
-When you look at the petal measurements of the three species of iris shown in the plot above, what do you see? 
+When you look at the petal measurements of the three species , what do you see? 
 
-- _It’s pretty obvious to us humans that Iris-virginica has larger petals than Iris-versicolor and Iris-setosa._ 
+- _It’s pretty obvious to us humans that virginica has larger petals than versicolor and setosa. But machine cannot understand like we do. It needs some algorithm to do so._
 
-But machine cannot understand like we do. It needs some algorithm to do so. In order to achieve such a task, we need to implement an algorithm that is able to classify the iris flowers into their corresponding classes.
+For that, we need to implement an algorithm that is able to classify the iris flowers into their corresponding classes.
 
+---
+
+# Python Library
+#### scikit-learn for Machine Learning
+
+Scikit-learn provides various tools for model fitting, model selection, model evaluation, and many other utilities.
+
+```py
+# import built-in machine learning algorithms, for example Logistic Regression
+
+from sklearn.linear_model import LogisticRegression
+```
 
 
 ---
@@ -296,11 +308,16 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 # Algorithm
 
-**Logistic Regression** is used to predict a dependent variable, given a set of independent variables, such that the dependent variable is categorical
+**Logistic Regression** is used to predict a categorical target , given a set of independent variables.
 
 ```py
+# import Linear Regression
 from sklearn.linear_model import LogisticRegression
+
+# create model
 model = LogisticRegression(max_iter=150)
+
+# train model
 model.fit(X_train, y_train)
 ```
 
@@ -324,11 +341,11 @@ Check out my video *[HERE](https://youtu.be/XwMlUv7OSJw) on how to calculate con
 
 ---
 # Finally!
-Your model ready to be used.
+Our model ready to be used.
 
 ```py
 # Lets create a new data
-data = {'Sepal.Length': [1.2], 'Sepal.Width': [3.2], 'Petal.Length': [3.8], 'Petal.Width': [2.7]}
+data = {'Sepal.Length': [4.7], 'Sepal.Width': [3.1], 'Petal.Length': [1.7], 'Petal.Width': [0.3]}
 
 newdf = pd.DataFrame(data)
 ```
@@ -340,12 +357,23 @@ ynew = model.predict(newdf)
 
 
 ---
-# Data Transformation
+# Next?
 
-In Machine learning, we usually deal with the dataset which contains multiple labels in columns. These labels can be in the form of words or numbers. Label Encoding refers to converting the labels into the numeric form into the machine-readable form.
+**Can we have a better classifier performance?**
+- Normalizing, scaling, feature selection, cross-validation, etc.
 
-```py
-from sklearn.preprocessing import LabelEncoder
-le = LabelEncoder()
-df2['Species'] = le.fit_transform(df['Species'])
-```
+**Which algorithm is better?**
+- Logistic Regression, k-NN, Neural Network, etc.
+
+---
+# Learning  Materials
+
+**Textbook**
+- [Introduction to Data Mining](https://www-users.cse.umn.edu/~kumar001/dmbook/index.php)
+
+
+
+**Practical Books**
+- [Python for Data Analysis](https://www.amazon.com/gp/product/1491957662?tag=javamysqlanta-20)
+- [Machine Learning with Python Cookbook](https://www.amazon.com/gp/product/1491989386?tag=javamysqlanta-20)
+
