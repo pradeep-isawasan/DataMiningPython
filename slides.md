@@ -9,12 +9,21 @@ title: "Slides"
 <!-- _class: lead -->
 
 # Basic Data Mining with Python
-pradeep
+
 
 ---
 <!-- paginate: true -->
 <!-- footer: ![w:130 h:40](uitm-hitel.png) HITeL Innovative T&L Webinar Series 2022 -->
 
+# Presenter
+
+Pradeep Isawasan is currently a senior lecturer in Computing Sciences Studies, College of Computing, Informatics and Media, Universiti Teknologi MARA (UiTM), Perak Branch.  
+
+- [YouTube](https://www.youtube.com/@teknodip)
+- [TikTok](https://www.tiktok.com/@datadeep)
+- [Website](https://www.datum.my/)
+
+---
 # What is Data Mining?
 #### Many Definitions
 
