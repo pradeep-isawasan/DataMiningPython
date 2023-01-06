@@ -9,19 +9,22 @@ title: "Slides"
 <!-- _class: lead -->
 
 # Basic Data Mining with Python
-
+Webinar
+CSC649 (Special Topics in Computer Science)
 
 ---
 <!-- paginate: true -->
-<!-- footer: ![w:130 h:40](uitm-hitel.png) HITeL Innovative T&L Webinar Series 2022 -->
+<!-- footer: Webinar CSC649, UiTM Cawangan Terengganu, Kampus Kuala Terengganu -->
 
 # Presenter
 
-Pradeep Isawasan is currently a senior lecturer in Computing Sciences Studies, College of Computing, Informatics and Media, Universiti Teknologi MARA (UiTM), Perak Branch.  
+**Pradeep Isawasan** currently a senior lecturer in College of Computing, Informatics and Media, Universiti Teknologi MARA (UiTM), Perak Branch, Tapah Campus.  
 
 - [YouTube](https://www.youtube.com/@teknodip)
 - [TikTok](https://www.tiktok.com/@datadeep)
-- [Website](https://www.datum.my/)
+- [GitHub](https://github.com/pradeep-isawasan)
+- [Kaggle](https://www.kaggle.com/pradeepisawasan)
+- [Google Scholar](https://scholar.google.com.my/citations?hl=en&user=aHws58EAAAAJ&view_op=list_works&sortby=pubdate)
 
 ---
 # What is Data Mining?
@@ -372,7 +375,10 @@ ynew = model.predict(newdf)
 - Normalizing, scaling, feature selection, cross-validation, etc.
 
 **Which algorithm is better?**
-- Logistic Regression, k-NN, Neural Network, etc.
+- [Neural Network?](https://youtu.be/-uenFyHqOsM), Check out my video on perceptron
+
+**How to apply?**
+- create a _"machine learning"_ capable web/mobile-based system
 
 ---
 # Learning  Materials
