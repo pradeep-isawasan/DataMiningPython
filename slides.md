@@ -8,23 +8,23 @@ title: "Slides"
 
 <!-- _class: lead -->
 
-# Basic Data Mining with Python
+# Getting Real about Data Mining
 Webinar
-CSC649 (Special Topics in Computer Science)
 
 ---
 <!-- paginate: true -->
-<!-- footer: Webinar CSC649, UiTM Cawangan Terengganu, Kampus Kuala Terengganu -->
+<!-- footer: Webinar: Getting Real about Data Mining -->
 
 # Presenter
 
-**Pradeep Isawasan** currently a senior lecturer in College of Computing, Informatics and Media, Universiti Teknologi MARA (UiTM), Perak Branch, Tapah Campus.  
+**Pradeep Isawasan**  
 
-- [YouTube](https://www.youtube.com/@teknodip)
-- [TikTok](https://www.tiktok.com/@datadeep)
-- [GitHub](https://github.com/pradeep-isawasan)
-- [Kaggle](https://www.kaggle.com/pradeepisawasan)
-- [Google Scholar](https://scholar.google.com.my/citations?hl=en&user=aHws58EAAAAJ&view_op=list_works&sortby=pubdate)
+Senior Lecturer, 
+*College of Computing, Informatics and Media,
+Universiti Teknologi MARA (UiTM), Perak Branch.*  
+
+
+--> [YouTube](https://www.youtube.com/@teknodip), [TikTok](https://www.tiktok.com/@datadeep), [GitHub](https://github.com/pradeep-isawasan), [Kaggle](https://www.kaggle.com/pradeepisawasan), [Google Scholar](https://scholar.google.com.my/citations?hl=en&user=aHws58EAAAAJ&view_op=list_works&sortby=pubdate)
 
 ---
 # What is Data Mining?
