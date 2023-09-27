@@ -17,10 +17,10 @@ Webinar
 
 # Presenter
 
-**Pradeep Isawasan**  
+**Ts. Dr. Pradeep Isawasan**  
 
 Senior Lecturer, 
-*College of Computing, Informatics and Media,
+*College of Computing, Informatics and Mathematics,
 Universiti Teknologi MARA (UiTM), Perak Branch.*  
 
 
