@@ -9,11 +9,12 @@ title: "Slides"
 <!-- _class: lead -->
 
 # Getting Real about Data Mining
-Webinar
+Collaborative Teaching - Data Science Course
+Kalbis Institute, Jakarta, Indonesia
 
 ---
 <!-- paginate: true -->
-<!-- footer: Webinar: Getting Real about Data Mining -->
+<!-- footer: Collaborative Teaching - Data Science Course  -->
 
 # Presenter
 
@@ -275,6 +276,21 @@ df2.plot.scatter(x = 'Petal.Length', y = 'Petal.Width', c = df2['Species'].map(c
 
 # Part II: Machine Learning (ML)
 
+
+---
+
+# Machine Learning
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
+![w:840 h:430 center](ml_basic.svg)
+
+
 ---
 
 # Performing Classification
@@ -392,3 +408,12 @@ ynew = model.predict(newdf)
 - [Python for Data Analysis](https://www.amazon.com/gp/product/1491957662?tag=javamysqlanta-20)
 - [Machine Learning with Python Cookbook](https://www.amazon.com/gp/product/1491989386?tag=javamysqlanta-20)
 
+---
+# Exercise
+
+**Instructions**
+1. Download the dirty Iris dataset [HERE](https://www.kaggle.com/uciml/iris)
+2. Perform data preprocessing such as handling missing values, handling problematic values, etc.
+3. Split the dataset into training and test set
+3. Perform classification using Logistic Regression
+4. Evaluate the model
