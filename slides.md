@@ -8,13 +8,14 @@ title: "Slides"
 
 <!-- _class: lead -->
 
-# Getting Real about Data Mining
-Collaborative Teaching - Data Science Course
-Kalbis Institute, Jakarta, Indonesia
+# Data Mining with Python
+Foreign Expert Seminar,
+School of Computer Science Engineering and Information Systems,
+Vellore Institute of Technology (VIT), India
 
 ---
 <!-- paginate: true -->
-<!-- footer: Collaborative Teaching - Data Science Course  -->
+<!-- footer: Foreign Expert Seminar - VIT  -->
 
 # Presenter
 
@@ -22,7 +23,7 @@ Kalbis Institute, Jakarta, Indonesia
 
 Senior Lecturer, 
 *College of Computing, Informatics and Mathematics,
-Universiti Teknologi MARA (UiTM), Perak Branch.*  
+Universiti Teknologi MARA (UiTM), Perak Branch, Malaysia.*  
 
 
 --> [YouTube](https://www.youtube.com/@teknodip), [TikTok](https://www.tiktok.com/@datadeep), [GitHub](https://github.com/pradeep-isawasan), [Kaggle](https://www.kaggle.com/pradeepisawasan), [Google Scholar](https://scholar.google.com.my/citations?hl=en&user=aHws58EAAAAJ&view_op=list_works&sortby=pubdate)
@@ -76,7 +77,7 @@ _R Studio Cloud, Power BI, Tableau, Google Collab_
 
 - High-Level Programming Language.
 - Emphasizes on code readibilty.
-- Rank = 1* for 2021 *[(IEEE Spectrum)](https://spectrum.ieee.org/top-programming-languages/)
+- Rank = 1* for 2023 *[(IEEE Spectrum)](https://spectrum.ieee.org/the-top-programming-languages-2023)
 - Consist of fantastic libraries!
 
 ---
@@ -412,7 +413,7 @@ ynew = model.predict(newdf)
 # Exercise
 
 **Instructions**
-1. Download the dirty Iris dataset [HERE](https://www.kaggle.com/uciml/iris)
+1. Download the dirty Iris dataset [HERE](https://github.com/pradeep-isawasan/DataMiningPython/blob/master/dirty_iris_exercise.csv)
 2. Perform data preprocessing such as handling missing values, handling problematic values, etc.
 3. Split the dataset into training and test set
 3. Perform classification using Logistic Regression
